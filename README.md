@@ -1,7 +1,7 @@
 
-**A note on Tabbimajig, and things to explain:**
+# A note on Tabbimajig, and things to explain:
 
-It is very unfinished. :r
+**It is very unfinished. :r**
 
 It is my first "real" venture into a solo project outside of coursework.
 As a result, it might be rather messy, due to my various experimentations. 
