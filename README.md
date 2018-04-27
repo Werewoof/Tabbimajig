@@ -1,5 +1,5 @@
 
-#A note on Tabbimajig, and things to explain:
+**A note on Tabbimajig, and things to explain:**
 
 It is very unfinished. :r
 
