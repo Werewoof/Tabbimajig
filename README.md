@@ -2,6 +2,7 @@
 # A note on Tabbimajig, and things to explain:
 
 **It is very unfinished. :r**
+
 **npm install will also take a long time, I wish I knew how to condense that.**
 
 It is my first "real" venture into a solo project outside of coursework.
