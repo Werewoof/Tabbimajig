@@ -13,11 +13,17 @@ As a result, it might be rather messy, due to my various experimentations.
 Things you can expect:
 
 -Two gear buttons: the middle one is options, the other one a placeholder
+
 -Several buttons not doing anything yet, or probably doing the wrong thing
+
 -Potentially strange messages in the console from various tests
+
 -Just a lot of messages in the console from various tests
+
 -Bizarre messages in the DevTools
+
 -Clicking certain things in options changes texts
+
 -Bright colors!
 
 
