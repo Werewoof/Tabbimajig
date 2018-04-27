@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <link rel="stylesheet" href="TAB_All.css">
+          <link rel="stylesheet" href="TAB_Header.css">
+
+          <link rel="stylesheet" href="TAB_Home.css">
+          <link rel="stylesheet" href="TAB_Options.css">
+          <link rel="stylesheet" href="TAB_Day.css">
+
+
+          <!-- Insert this line above script imports  -->
+          <!-- Allows you to use Bootstrap :D  -->
+          <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+  </head>
+  <body>
+    <div class="container">
+
+
+
+      <!--______________HEADER, LOGO______________-->
+
+      <div class="row fill-width header">
+        <img src="images/TAB_header.png"  id="header">
+        <img src="images/TAB_logo.png"    id="logo">
+      </div>
+
+
+
+
+      <!--______________HEADER BUTTONS______________-->
+
+      <div id="HEADER-BTNS" class="row">
+        <div class="col-xs-3" id="head-btn-go"></div>
+        <div class="col-xs-3 goToOptions" id="head-btn-options"></div>
+        <div class="col-xs-3" id="head-btn-go"></div>
+
+        <!-- placeholder for a future thingy-->
+        <div class="col-xs-3" id="head-btn-options"></div>
+      </div>
+
+
+
+
+
+          <!--______________CONTENT______________-->
+      <div class="row fill" id="main-area">
+
+
+
+
+          <!--______________OPTIONS______________-->
+
+        <div class="col-xs-4" id="side-button-area">
+
+          <div class="side-button goToOptions" id="btn-BACK">
+            back
+          </div>
+          <div class="side-button" id="btn-SAVE">
+            save
+          </div>
+          <div class="side-button" id="btn-LOAD">
+            load
+          </div>
+
+          <div class="side-button" id="btn-7DAYS">
+            7 days
+          </div>
+          <div class="side-button" id="btn-XDAYS">
+            <em>x</em> days
+          </div>
+        </div>
+
+        <div class="col-xs-8 ITEM_options">
+
+          <div class="day-button" id="btn-SUNDAY">
+            sunday
+          </div>
+          <div class="day-button" id="btn-MONDAY">
+            monday
+          </div>
+          <div class="day-button" id="btn-TUESDAY">
+            tuesday
+          </div>
+
+          <div class="day-button" id="btn-WEDNESDAY">
+            wednesday
+          </div>
+
+          <div class="day-button" id="btn-THURSDAY">
+            thursday
+          </div>
+
+          <div class="day-button" id="btn-FRIDAY">
+            friday
+          </div>
+
+          <div class="day-button" id="btn-SATURDAY">
+            saturday
+          </div>
+
+        </div>
+
+
+
+
+            <!--______________DAY EDIT______________-->
+
+        <div class="ITEM_dayEdit">
+            <p id="day"></p>
+        </div>
+
+        <div class="tabScroll ITEM_dayEdit col-xs-8" id="style-2">
+            <div class="">
+
+
+              <div class="savedTab col-xs-9 tabSection">
+                Some recipe
+              </div>
+
+              <div class="editTab col-xs-2 tabSection">
+                edit
+              </div>
+              <div class="deleteTab col-xs-1 tabSection">
+                x
+              </div>
+
+
+
+              <div class="savedTab col-xs-9 tabSection">
+                Some car I found
+              </div>
+
+              <div class="editTab col-xs-2 tabSection">
+                edit
+              </div>
+              <div class="deleteTab col-xs-1 tabSection">
+                x
+              </div>
+
+
+
+              <div class="savedTab col-xs-9 tabSection">
+                Something my spouse wants me to look over
+              </div>
+
+              <div class="editTab col-xs-2 tabSection">
+                edit
+              </div>
+              <div class="deleteTab col-xs-1 tabSection">
+                x
+              </div>
+
+
+
+              <div class="savedTab col-xs-9 tabSection">
+                Some bad haircut ideas
+              </div>
+
+              <div class="editTab col-xs-2 tabSection">
+                edit
+              </div>
+              <div class="deleteTab col-xs-1 tabSection">
+                x
+              </div>
+
+
+              <!-- For testing purposes -->
+              <form>
+                <input type="text" name="firstname" class="putItIn">
+                <br>^Old URL<br>
+                <input type="text" name="lastname" class="saveIt">
+                <br>^New URL<br>
+              </form>
+
+            </div>
+        </div>
+          <div id="btn-go" class="ITEM_home"></div>
+
+      </div>
+    </div>
+  </body>
+
+
+
+
+<!-- SCRIIIIIIIIIIPTS-->
+
+  <script>
+    require('./renderer.js')
+  </script>
+
+<!-- I'm pretty sure this was testing IPC communications between files -->
+  <script>
+  	function aaa(put) {
+  		var ipc = require('electron').ipcRenderer;
+  		ipc.send('my-msg', put);
+  	}
+  </script>
+
+
+  <script>require('./tabClick.js')</script>
+  <script>require('./readInDayFiles.js')</script>
+  <script src="activePage.js"></script>
+  <script src="onMouseOver.js"></script>
+</html>

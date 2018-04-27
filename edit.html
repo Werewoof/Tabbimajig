@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <link rel="stylesheet" href="TAB_All.css">
+          <link rel="stylesheet" href="TAB_URLEdit.css">
+
+          <!-- Insert this line above script imports  -->
+          <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="row fill" id="url-area">
+        <form>
+          <div class="col-xs-2">
+
+            <p class="enterUrl" id="wow">
+                URL
+            </p>
+          </div>
+          <div class="col-xs-6">
+            <input type="text" name="urlEdit" class="enterUrl enterArea">
+          </div>
+
+          <div class="saveURLTab col-xs-2 enterUrl">
+            save
+          </div>
+          <div class="cancelURLTab col-xs-2 enterUrl">
+            cancel
+          </div>
+        </form>
+
+      </div>
+
+
+  </body>
+
+  <script>
+    require('./renderer.js')
+  </script>
+
+
+  <script>
+
+  </script>
+
+
+  <script>require('./passURL.js')</script>
+  <script src="activePage.js"></script>
+  <script src="onMouseOver.js"></script>
+
+
+
+</html>

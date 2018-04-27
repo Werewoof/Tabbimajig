@@ -1,0 +1,56 @@
+.container{
+  width 300px;
+}
+
+.enterUrl{
+  position: relative;
+  margin-top: 25px;
+}
+
+.enterArea{
+
+    width: 150px;
+    border-radius: 5%;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,255,0.2);
+    background: var(--white)
+}
+
+.enterArea:focus {
+    background-color: #f5ffb3;
+}
+
+p{
+  margin-left: 10px;
+  margin-right: 3px;
+  text-align: center;
+}
+
+.saveURLTab{
+  margin-left: -25px;
+  margin-right: 3px;
+	border-radius: 4px;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,255,0.2);
+  background: var(--pink);
+  font-size: 12px;
+  color: var(--white);
+  height:26px;
+}
+
+.cancelURLTab{
+	border-radius: 4px;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,255,0.2);
+  background: var(--white);
+  font-size: 12px;
+  color: var(--purple);
+  height:26px;
+}
+
+#url-area
+{
+      background-image: url("images/TAB_background.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 0;
+      width: 420px;
+}

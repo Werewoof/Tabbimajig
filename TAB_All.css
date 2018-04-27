@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    font-family: 'ARLRDBD';
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+
+
+@font-face {
+    font-family: "ARLRDBD";
+    src: url('fonts/ARLRDBD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root {
+  --pink: #FE0148;
+  --purple: #48164F;
+  --orange: #FF6D00;
+  --yellow: #FFD100;
+  --white: #D2F2FF;
+
+  --darkPink: #980631;
+  --darkPurple: #1C0E4A;
+  --darkOrange: #504200;
+  --darkYellow: #7C6600;
+}
+
+
+.fill-width {
+    min-height:20%;
+    width:110%;
+    min-width:110%;
+}
+
+
+.fill {
+    width:100%;
+    height:100%;
+}
+
+.container {
+      padding-right:0;
+      padding-left:0;
+      margin-right:0;
+      margin-left:0;
+      height:100%;
+      width:100%;
+}
+
+#main-area
+{
+      background-image: url("images/TAB_background.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 0;
+      width: 660px;
+}

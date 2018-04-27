@@ -1,0 +1,154 @@
+
+
+.side-button {
+      position: relative;
+      margin-left: 5%;
+      z-index: 2;
+      font-size: 200%;
+      text-align: center;
+      letter-spacing: 20px;
+
+}
+
+
+.side-button {
+  box-shadow: 1px 1px 1px 1px rgba(0,0,255,0.2);
+}
+
+/* Pre-render the bigger shadow, but hide it */
+.side-button::after {
+  box-shadow: 65px 65px 0px 0px rgba(0,0,255,1);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Transition to showing the bigger shadow on hover */
+.side-button:hover::after {
+  opacity: 1;
+}
+
+
+
+
+
+.day-button {
+      position: relative;
+      margin: 3px;
+      z-index: 2;
+      font-size: 200%;
+      text-align: left;
+      letter-spacing: 25px;
+      width: 120%;
+      padding-left: 5%;
+
+}
+
+
+/* The fast way */
+.day-button {
+  box-shadow: 1px 1px 1px 1px rgba(0,0,255,0.2);
+}
+
+/* Pre-render the bigger shadow, but hide it */
+.day-button::after {
+  box-shadow: 65px 65px 65px 65px rgba(0,0,255,0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Transition to showing the bigger shadow on hover */
+.day-button:hover::after {
+  opacity: 1;
+}
+
+
+#btn-BACK{
+  border-radius: 15px 15px 2px 2px;
+  color: var(--purple);
+  background-color: var(--pink);
+  z-index: 0;
+  margin-top: 8%;
+}
+
+#btn-SAVE{
+  border-radius: 2px 2px 2px 2px;
+  color: var(--yellow);
+  background-color: var(--orange);
+}
+
+#btn-LOAD{
+  border-radius: 2px 2px 15px 15px;
+  color: var(--pink);
+  background-color: var(--yellow);
+}
+
+
+#btn-7DAYS{
+  border-radius: 15px 15px 2px 2px;
+  color: var(--white);
+  background-color: var(--purple);
+  z-index: 0;
+  margin-top: 50%;
+  letter-spacing: 10px;
+}
+
+#btn-XDAYS{
+  border-radius: 2px 2px 15px 15px;
+  color: var(--white);
+  background-color: var(--pink);
+  letter-spacing: 10px;
+}
+
+
+
+
+
+#btn-SUNDAY{
+  border-radius: 15px 15px 5px 5px;
+  color: var(--white);
+  background-color: #0F80FF;
+  z-index: 0;
+  margin-top: 5%;
+}
+
+#btn-MONDAY{
+  border-radius: 5px;
+  color: var(--white);
+  background-color: #1876FD;
+  z-index: 0;
+}
+
+#btn-TUESDAY{
+  border-radius: 5px;
+  color: var(--white);
+  background-color: #216BFA;
+  z-index: 0;
+}
+
+#btn-WEDNESDAY{
+  border-radius: 5px;
+  color: var(--white);
+  background-color: #3356F6;
+  z-index: 0;
+}
+
+#btn-THURSDAY{
+  border-radius: 5px;
+  color: var(--white);
+  background-color: #4541F2;
+  z-index: 0;
+}
+
+#btn-FRIDAY{
+  border-radius: 5px;
+  color: var(--white);
+  background-color: #4E36F0;
+  z-index: 0;
+}
+
+#btn-SATURDAY{
+  border-radius: 2px 2px 15px 15px;
+  color: var(--white);
+  background-color: #6F0EE8;
+  z-index: 0;
+}

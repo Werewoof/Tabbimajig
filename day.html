@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <link rel="stylesheet" href="TAB_All.css">
+          <link rel="stylesheet" href="TAB_Header.css">
+
+          <link rel="stylesheet" href="TAB_Home.css">
+          <link rel="stylesheet" href="TAB_Options.css">
+
+
+          <!-- Insert this line above script imports  -->
+          <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <script src="onMouseOver.js"></script>
+
+
+
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row fill-width header">
+        <img src="images/TAB_header.png"  id="header">
+        <img src="images/TAB_logo.png"    id="logo">
+
+
+      </div>
+
+      <div id="HEADER-BTNS" class="row">
+        <div class="col-xs-3" id="head-btn-go"></div>
+        <div class="col-xs-3" id="head-btn-options"></div>
+        <div class="col-xs-3" id="head-btn-go"></div>
+        <div class="col-xs-3" id="head-btn-options"></div>
+      </div>
+      <div class="row fill" id="main-area">
+          <p id="day"></p>
+
+      </div>
+  </body>
+
+  <script>
+    require('./renderer.js')
+  </script>
+
+
+
+
+
+  <script src="activePage.js"></script>
+  <script src="onMouseOver.js"></script>
+
+
+
+</html>
